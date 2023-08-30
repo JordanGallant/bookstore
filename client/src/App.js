@@ -5,15 +5,22 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { Books } from "./pages/Books";
+import { Add } from "./pages/Add";
+import { Update } from "./pages/Update";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Home</div>,
+    element: <Books/>,
   },
   {
-    path: "/books",
-    element: <div>Books</div>,
+    path: "/add",
+    element: <Add/>,
+  },
+  {
+    path: "/update",
+    element: <Update/>,
   },
 ]);
 function App() {
